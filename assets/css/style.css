@@ -1,0 +1,234 @@
+
+.kbNews{
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/*.kbNews:after{
+    content: '';
+    display: block;
+    clear: both;
+}*/
+
+.news {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-bottom: 1.875em; /* 15px 30px */
+}
+
+@media screen and (min-width: 992px) and (max-width: 3000px) {
+    .kbNews .col-md-3 {
+        width: 32.333% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .kbNews .col-md-3 {
+        width: 48%;
+    }
+}
+
+@media (max-width: 713px) {
+    .kbNews .col-md-3 {
+        width: 100%;
+    }
+}
+
+.kbNews .col-md-3 {
+    height: auto;
+}
+
+.news:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.news .img-figure {
+    position: relative;
+}
+
+.news .img-figure img {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.news:hover .img-figure img {
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
+.news .title {
+    /*padding: 29px 30px;*/
+    padding: 45px 30px;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.news .title h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+    /*	color: #3D6AA2;*/
+    text-align: center;
+}
+
+.news:hover .title  {
+    margin-top: -90px;
+    background: #fff;
+}
+
+.news  p.description {
+    position: relative;
+    font-weight: normal;
+    line-height: 22px;
+    opacity: 0;
+
+    text-align: center;
+
+    padding: 15px 30px 0px 30px;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.news:hover p.description  {
+    opacity: 1;
+}
+
+p.more {
+    text-align: center;
+}
+
+.more a {
+    position: relative;
+    font-size: 13px;
+    margin-top: 30px;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: inline-block;
+    color: #28998b;
+}
+
+.more a:after {
+    content: '';
+    width: 18px;
+    height: 1px;
+
+    position: absolute;
+    left: 55px;
+    top: 9px;
+
+    background: #28998b;
+
+    vertical-align: middle;
+    margin-left: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.news:hover a:after {
+    width: 30px;
+}
+
+.cat {
+    background: #a0bc9f;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 1;
+    padding: 3px 15px;
+}
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+/* Common styles for all types */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #000;
+    border-left-width: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+
+/* Tighten up space between multiple callouts */
+.bs-callout + .bs-callout {
+    margin-top: -5px;
+}
+
+/* Variations */
+.bs-callout-danger {
+    border-left-color: #ce4844;
+}
+.bs-callout-danger h4 {
+    color: #ce4844;
+}
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}
+.bs-callout-warning h4 {
+    color: #aa6708;
+}
+.bs-callout-info {
+    border-left-color: #1b809e;
+}
+.bs-callout-info h4 {
+    color: #1b809e;
+}

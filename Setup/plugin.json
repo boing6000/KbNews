@@ -1,0 +1,34 @@
+{
+    "title": "News",
+    "version": "1.00",
+    "name": "KbNews",
+    "description": "Sistema de Notícias.",
+    "icon": "fa-newspaper-o",
+    "author": "André L B Teodoro",
+    "options": [
+        {
+            "label": "Prefixo na Url",
+            "name": "newsPrefix",
+            "type": "TextLang",
+            "default": "noticias"
+        },
+        {
+            "label": "Tags Permitidas",
+            "name": "allowedtags",
+            "type": "text",
+            "default": "<b><span><i><strong><em><a><img><p>"
+        },
+        {
+            "label": "Nome dos Blocos",
+            "name": "blockname",
+            "type": "text",
+            "default": "block1"
+        },
+        {
+            "label": "Limite de Introdução",
+            "name": "introlimit",
+            "type": "number",
+            "default": "300"
+        }
+    ]
+}

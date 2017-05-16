@@ -1,0 +1,11 @@
+{
+  "name": "boing6000/plugin-kbnews",
+  "autoload": {
+    "psr-4": {"Plugin\\KbNews\\": "/"}
+  },
+  "minimum-stability": "stable",
+  "license": [
+    "MIT",
+    "GPL-3.0+"
+  ]
+}
